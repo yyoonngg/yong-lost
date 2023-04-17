@@ -1,0 +1,468 @@
+header{
+    height: 130px;
+    width:100%;
+}
+.header-area{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-area h1{
+    color: #2d6bba;
+}
+.search-area{
+    display: flex;
+    justify-content: space-around;
+    width: 440px;
+    height: 40px;
+}
+.search-area input{
+    width: 360px;
+    height: 40px;
+    border: 3px solid #2d6bba;
+    text-decoration: none;
+}
+.search-area input:focus{
+    outline: none;
+}
+.search-area button{
+    width: 60px;
+    height: 40px;
+    border: 1px solid #2d6bba;
+    padding: 0;
+    background-color: #2d6bba;
+    color: white;
+}
+.nav{
+    width: 100%;
+    height: 50px;
+    background-color: #2d6bba;
+}
+.nav-area{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-area a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+article{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+.article-main{
+    display: flex;
+    flex-direction: column;
+    width: 850px;
+}
+section{
+    border: 3px solid #2d6bba;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#lost-list-area{
+    border:none;
+}
+.command-area{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    width: 100%;
+}
+.command-left{
+    width:50%;
+}
+.command-right{
+    width:50%;
+}
+.lost-inputbox{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    padding-left: 65px;
+}
+.lost-period{
+    display: flex;
+    justify-content: start;
+    padding-left: 65px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 30px;
+}
+#lost-cate{
+    width: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid rgb(118, 118, 118);
+    padding-left: 5px;
+}
+.lost-inputbox input{
+    width: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.lost-period input{
+    width: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.period-ex{
+    color: gray;
+    font-size: 15px;
+    width: 400px;
+    height: 30px;
+    padding-left: 145px;
+}
+.place-btn{
+    width: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 0;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+.spot-btn{
+    width: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 0;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+.place-btn:hover{
+    color:white;
+    background-color: #2d6bba;
+    border: 1px solid black;
+}
+.spot-btn:hover{
+    color:white;
+    background-color: #2d6bba;
+    border: 1px solid black;
+}
+.lostnm{
+    width:75px;
+    text-align: start;
+    font-weight: 550;
+}
+.searchBtn{
+    background-color: #2d6bba;
+    color: white;
+    border: none;
+    width: 50px;
+    height: inherit;
+    font-size: 12px;
+    font-weight: 600;
+}
+.total-search{
+    width: 75px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #2d6bba;
+    color: white;
+    border: none;
+    margin-bottom: 20px;
+}
+.dropdown-menu li{
+    width:100%;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    padding-left: 5px;
+}
+.dropdown-place-item{
+    height: 22px;
+    font-size: 13px;
+}
+.dropdown-place-item:hover{
+    background-color: #2d6bba;
+    color: white;
+}
+.dropdown-spot-item{
+    height: 22px;
+    font-size: 13px;
+}
+.dropdown-spot-item:hover{
+    background-color: #2d6bba;
+    color: white;
+}
+ul{
+    list-style-type: none;
+}
+.popUp{
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 300px;
+    height: 300px;
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -90px;
+    margin-left: -300px;
+}
+.pop-nav{
+    display: flex;
+    justify-content: space-between;
+    color:#2d6bba;
+    font-weight: 600;
+    font-size: 16px;
+    padding-left: 5px;
+}
+.pop-article{
+    display: flex;
+    border-top: 1px solid #ccc;
+    height: 90%;
+}
+.pop-left{
+    overflow-y: scroll;
+    height: 272px;
+    width: 50%;
+    padding: 0;
+    text-align: start;
+}
+.pop-left li{
+    width:100%;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    padding-left: 5px;
+}
+.pop-right{
+    width:50%;
+    height: 272px;
+    padding: 0;
+    text-align: start;
+}
+.pop-right li{
+    width:100%;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    padding-left: 5px;
+}
+#pop-btn{
+    border: none;
+    background-color: #2d6bba;
+    color: white;
+    width: 25px;
+}
+#lost-list-area{
+    margin-top: 20px;
+}
+table{
+    width:100%;
+}
+th{
+    background-color: #f4f7fc;
+    border-bottom: 1px solid #eeeff1;
+    color: #333;
+    font-size: 15px;
+    height: 50px;
+    text-align: center;
+}
+tr{
+    border-bottom: 1px solid #eeeff1;
+}
+td{
+    padding: 5px;
+    font-size: 12px;
+}
+td:nth-child(1){
+    text-align: center;
+}
+td:nth-child(3){
+    text-align: center;
+}
+td:nth-child(4){
+    text-align: center;
+}
+td:nth-child(5){
+    text-align: center;
+}
+.page-area{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.page-link{
+    border-radius: 0;
+    border: none;
+    color:#333;
+}
+.page-link:hover{
+    background-color: white;
+    color:#2d6bba;
+}
+.active>.page-link{
+    background-color: white;
+    color:#2d6bba;
+    text-decoration: underline;
+    font-weight: 600;
+}
+.carousel-item{
+    border:1px solid red;
+    background-color: #2d6bba;
+}
+h2{
+    font-family: "NG", "NanumGothic","Nanum Gothic",dotum,sans-serif;
+}
+h5{
+    position: relative;
+    left: 80px;
+    font-family: "NG", "NanumGothic","Nanum Gothic",dotum,sans-serif;
+}
+.latest-list{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.latest-list button{
+    width:5%;
+    height: 60px;
+    border: none;
+    background-color: white;
+    color: #2d6bba;
+    font-size: 50px;
+    font-weight: 1000;
+    position: relative;
+    top: 5px;
+}
+.main-latest{
+    width: 90%;
+}
+.main-latest ul{
+    width:100%;
+    height: 160px;
+    list-style: none;
+    overflow: hidden;
+}
+.main-latest li{
+    width:140px;
+    height: 160px;
+    text-align: center;
+    display: list-item;
+    float: left;
+    margin: 0 3px;
+    padding: 0;
+    position: relative;
+    right: 10px;
+}
+.main-latest img{
+    width: 130px;
+    height: 100px;
+}
+.latest-list-name{
+    font-family: 돋움,Dotum;
+    font-weight: bold;
+    font-size: 11px;
+    padding-top: 5px;
+    margin:0;
+}
+.latest-list-ymd{
+    font-family: 돋움,Dotum;
+    font-size: 11px;
+}
+footer{
+    max-height: 100vh;
+    height: 100px;
+    width:100%;
+    background-color: white;
+    border-top: 1px solid #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2em;
+}
+footer img{
+    width:200px;
+    height:80px;
+    padding-bottom: 2em;
+}
+footer div{
+    padding-bottom: 2em;
+    font-weight: 600;
+}
+@media screen and (max-width:48rem){
+    .header-area{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .search-area{
+        width:250px;
+    }
+    .search-area input{
+        height: 30px;
+        width: 200px;
+    }
+    .search-area button{
+        height: 30px;
+        width: 50px;
+    }
+    .nav-area a{
+        font-size: 11px;
+    }
+    .command-area{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .article-main{
+        width: 100%;
+    }
+    .command-left{
+        width: 100%;
+    }
+    .command-right{
+        width:100%;
+    }
+    .lost-inputbox{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .lost-period{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .popUp{
+        width: 360px;
+        margin-top: -60px;
+        margin-left: -180px;
+    }
+    th{
+        font-size: 11px;
+    }
+    td{
+        font-size: 11px;
+    }
+    .page-area{
+        width: 100%;
+    }
+    .pagination{
+        width:100%;
+        display: flex;
+        justify-content: center;
+    }
+    .page-item a{
+        font-size : 13px;
+        width:100%;
+        display: flex;
+        justify-content: center;
+    }
+    .page-item{
+        width: 25px;
+    }
+}

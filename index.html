@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-area">
+            <div>
+                <h1 class="fw-bold">Yong's Lost</h1>
+                <div class="fw-bold">경찰청 분실물 정보조회 제공서비스</div>
+            </div>
+            <div class="search-area">
+            <input type="text"/>
+            <button>검색</button>
+            </div>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="container nav-area">
+            <a href="#">습득물 검색</a>
+            <a href="#">습득물 휴대폰 검색</a>
+            <a href="#">핸드폰찾기 콜센터 검색</a>
+        </div>
+    </nav>
+    <article class="container">
+        <div class="article-main">
+            <h2>습득물 검색</h2>
+            <section>
+                <div class="command-area">
+                    <div class="command-left">
+                        <div class="lost-inputbox">
+                            <div class="lostnm">분류명</div>
+                            <div id="lost-cate"></div>
+                            <button type="button" class="searchBtn">찾기</button>
+                        </div>
+                        <div class="lost-period">
+                            <div class="lostnm">기간</div>
+                            <input id="lost-periodStart" placeholder="ex)20230413"/>
+                            <div>~</div>
+                            <input id="lost-periodEnd" placeholder="ex)20230414"/>
+                        </div>
+                        <div class="lost-inputbox">
+                            <div class="lostnm">습득물명</div>
+                            <input id="lost-name"/>
+                        </div>
+                    </div>
+                    <div class="command-right">
+                        <div class="dropdown-center lost-inputbox">
+                            <div class="lostnm">습득지역</div>
+                                <button class="btn dropdown-toggle place-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    선택
+                                </button>
+                            <ul class="dropdown-menu">
+                              <li><div id="LCA000" class="dropdown-place-item">서울특별시</div></li>
+                              <li><div id="LCH000" class="dropdown-place-item">강원도</div></li>
+                              <li><div id="LCI000" class="dropdown-place-item">경기도</div></li>
+                              <li><div id="LCJ000" class="dropdown-place-item">경상남도</div></li>
+                              <li><div id="LCK000" class="dropdown-place-item">경상북도</div></li>
+                              <li><div id="LCQ000" class="dropdown-place-item">광주광역시</div></li>
+                              <li><div id="LCS000" class="dropdown-place-item">대전광역시</div></li>
+                              <li><div id="LCR000" class="dropdown-place-item">대구광역시</div></li>
+                              <li><div id="LCU000" class="dropdown-place-item">울산광역시</div></li>
+                              <li><div id="LCT000" class="dropdown-place-item">부산광역시</div></li>
+                              <li><div id="LCV000" class="dropdown-place-item">인천광역시</div></li>
+                              <li><div id="LCL000" class="dropdown-place-item">전라남도</div></li>
+                              <li><div id="LCM000" class="dropdown-place-item">전라북도</div></li>
+                              <li><div id="LCN000" class="dropdown-place-item">충청남도</div></li>
+                              <li><div id="LCO000" class="dropdown-place-item">충청북도</div></li>
+                              <li><div id="LCP000" class="dropdown-place-item">제주특별자치도</div></li>
+                              <li><div id="LCW000" class="dropdown-place-item">세종특별자치시</div></li>
+                              <li><div id="LCF000" class="dropdown-place-item">해외</div></li>
+                            </ul>
+                          </div>
+                        <div class="lost-inputbox">
+                            <div class="lostnm">습득장소</div>
+                                <button class="btn dropdown-toggle spot-btn" id="lost-spot" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    선택
+                                </button>
+                            <ul class="dropdown-menu">
+                                <li><div id="LL1011" class="dropdown-spot-item">우체국(통)</div></li>
+                                <li><div id="LL1015" class="dropdown-spot-item">노상</div></li>
+                                <li><div id="LL1005" class="dropdown-spot-item">기차</div></li>
+                                <li><div id="LL1003" class="dropdown-spot-item">지하철</div></li>
+                                <li><div id="LL1012" class="dropdown-spot-item">백화점/매장</div></li>
+                                <li><div id="LL1002" class="dropdown-spot-item">택시</div></li>
+                                <li><div id="LL1014" class="dropdown-spot-item">음식점(업소포함)</div></li>
+                                <li><div id="LL1008" class="dropdown-spot-item">공공기관</div></li>
+                                <li><div id="LL1001" class="dropdown-spot-item">버스</div></li>
+                                <li><div id="LL1016" class="dropdown-spot-item">주택</div></li>
+                                <li><div id="LL1004" class="dropdown-spot-item">공항</div></li>
+                                <li><div id="LL1013" class="dropdown-spot-item">상점</div></li>
+                                <li><div id="LL1020" class="dropdown-spot-item">영화관</div></li>
+                                <li><div id="LL1009" class="dropdown-spot-item">놀이공원</div></li>
+                                <li><div id="LL1010" class="dropdown-spot-item">유원지</div></li>
+                                <li><div id="LL1007" class="dropdown-spot-item">학교</div></li>
+                                <li><div id="LL1006" class="dropdown-spot-item">회사</div></li>
+                                <li><div id="LL1017" class="dropdown-spot-item">기타</div></li>
+                                <li><div id="LL1018" class="dropdown-spot-item">불상</div></li>
+                            </ul>
+                        </div>
+                        <div class="lost-inputbox">
+                            <div class="lostnm">관리번호</div>
+                            <input id="lost-id"/>
+                        </div>                  
+                    </div>
+                </div>
+                <div>
+                    <button class="total-search">검색</button>
+                </div>
+            </section>
+            <section id="lost-list-area">
+                <div class="spinner-border d-flex justify-content-center m-5" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </section>
+            <nav aria-label="Page navigation example" class="page-area">
+                <ul class="pagination">
+
+                </ul>
+            </nav>
+            <aside class="mt-5">
+                
+            </aside>
+            <!-- 분류명 찾기 팝업창 -->
+            <div class="popUp" style="display: none;">
+                <div class="pop-nav">
+                    <div>분류명 찾기</div>
+                    <button id="pop-btn">X</button>
+                </div>
+                <div class="pop-article">
+                    <ul class="pop-left">
+                        <li>가방</li>
+                        <li>귀금속</li>
+                        <li>도서용품</li>
+                        <li>서류</li>
+                        <li>산업용품</li>
+                        <li>쇼핑백</li>
+                        <li>스포츠용품</li>
+                        <li>악기</li>
+                        <li>유가증권</li>
+                        <li>의류</li>
+                        <li>자동차</li>
+                        <li>전자기기</li>
+                        <li>지갑</li>
+                        <li>증명서</li>
+                        <li>컴퓨터</li>
+                        <li>카드</li>
+                        <li>현금</li>
+                        <li>휴대폰</li>
+                        <li>기타물품</li>
+                        <li>유류품</li>
+                    </ul>
+                    <ul class="pop-right">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <img src="	https://www.lost112.go.kr/images/home/common/182_logo.png" alt="경찰민원콜센터 국번없이 182">
+        <div>본 페이지는 공공데이터포털의 경찰철 분실물 조회서비스 Open API를 바탕으로 만들어진 페이지입니다.</div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
