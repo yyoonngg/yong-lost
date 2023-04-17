@@ -18,7 +18,7 @@
 # Ignore all local history of files
 .history
 .ionide
-key/
+key
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
