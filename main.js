@@ -1,5 +1,5 @@
-const API_KEY = 'xeZqhOihrhlYwG5rIbVg7EWsNJvuPYuPH3jqzBlXCtSYdxWFDXVqWGXdS7oS7%2B%2FVsWSt4CNky1VPj1Xuu9FCFw%3D%3D'
-//api키값
+const API_KEY = config.API_KEY;
+//키값 설정
 let lostPeriodStart = document.getElementById("lost-periodStart");
 let lostPeriodEnd = document.getElementById("lost-periodEnd");
 //1번 url을 위한 변수

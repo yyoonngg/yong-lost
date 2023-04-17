@@ -1,0 +1,4 @@
+$ touch .gitignore
+$ echo "key.js" >> .gitignore
+$ cat .gitignore
+key.js
